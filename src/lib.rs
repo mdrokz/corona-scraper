@@ -27,7 +27,6 @@ pub async fn getCoronaData() -> String {
 }
 
 async fn getData() -> String {
-    let res = reqwest::get("https://coronavirus.m.pipedream.net").await.unwrap();
+    let res = reqwest::get("https://corona.lmao.ninja/countries").await.unwrap();
     res.text().await.unwrap()
-    //String::from("hhe")
 }
